@@ -1,10 +1,12 @@
 # The False Sun Wiki
 
-Unofficial fan-made walkthrough site for Oniray's visual novel The False Sun.
+Unofficial fan-made play-online and walkthrough site for Oniray's visual novel
+The False Sun.
 
 The site is built on the existing Next.js / MkSaaS stack and focuses on:
 
 - All endings and gallery cleanup
+- Browser play page at `/play-online`
 - Ending 20 / rare chicken accident route notes
 - Silas route and Kyle route walkthroughs
 - Farm mini-games and save-point advice
@@ -34,3 +36,4 @@ https://www.thefalsesun.wiki
 - Prefer official itch.io information and clearly labeled community/video cross-checks.
 - Do not recommend unsafe APKs, modified clients, cheats, or script workarounds.
 - Keep the site clearly labeled as an unofficial fan-made walkthrough.
+- Keep downloadable builds pointed to itch.io.

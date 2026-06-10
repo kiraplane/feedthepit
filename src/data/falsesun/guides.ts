@@ -27,7 +27,7 @@ const videos = {
 } satisfies Record<string, GuideVideo>;
 
 export const siteDescription =
-  'The False Sun is an unofficial walkthrough hub for all endings, Ending 20, Silas and Kyle routes, mini-games, safe downloads, and mature-content warnings.';
+  'The False Sun is an unofficial play-online and walkthrough hub for all endings, Ending 20, Silas and Kyle routes, mini-games, safe downloads, and mature-content warnings.';
 
 export const guides: Guide[] = [
   {
@@ -54,7 +54,13 @@ export const guides: Guide[] = [
       'Built from official itch details, recent player demand, and two all-endings video cross-checks. Ending labels are route notes, not official gallery names.',
     video: videos.allEndings,
     tags: ['20 Endings', 'Walkthrough', 'Spoilers'],
-    relatedRoutes: ['/ending-20', '/silas-route', '/kyle-route', '/mini-games'],
+    relatedRoutes: [
+      '/play-online',
+      '/ending-20',
+      '/silas-route',
+      '/kyle-route',
+      '/mini-games',
+    ],
     body: [
       {
         heading: 'Use route clusters before hunting exact numbers',
@@ -138,7 +144,13 @@ export const guides: Guide[] = [
       'Cross-checked from itch player questions and a walkthrough transcript that describes a low-chance chicken accident leading to a hospital/city outcome.',
     video: videos.ritsu,
     tags: ['Ending 20', 'Chicken', 'Rare Branch'],
-    relatedRoutes: ['/all-endings', '/mini-games', '/kyle-route', '/download'],
+    relatedRoutes: [
+      '/play-online',
+      '/all-endings',
+      '/mini-games',
+      '/kyle-route',
+      '/download',
+    ],
     body: [
       {
         heading: 'Why Ending 20 feels different',
@@ -218,6 +230,7 @@ export const guides: Guide[] = [
     video: videos.allEndings,
     tags: ['Silas', 'Route', 'Save Points'],
     relatedRoutes: [
+      '/play-online',
       '/all-endings',
       '/ending-20',
       '/kyle-route',
@@ -297,6 +310,7 @@ export const guides: Guide[] = [
     video: videos.ritsu,
     tags: ['Kyle', 'Farm', 'Aftermath'],
     relatedRoutes: [
+      '/play-online',
       '/all-endings',
       '/ending-20',
       '/mini-games',
@@ -368,6 +382,7 @@ export const guides: Guide[] = [
       'Manual-data page built from official platform info, itch player comments requesting mini-game help, and ending-route cross-checks. No reliable dedicated mini-game video was selected.',
     tags: ['Mini-Games', 'Farm', 'Chicken'],
     relatedRoutes: [
+      '/play-online',
       '/ending-20',
       '/all-endings',
       '/download',
@@ -443,7 +458,12 @@ export const guides: Guide[] = [
     sourceNotes:
       'Official-only page. The itch.io page checked on 2026-06-08 listed Android, Windows/Linux, and macOS files; no YouTube video is used for download claims.',
     tags: ['Download', 'Android', 'Mac'],
-    relatedRoutes: ['/content-warnings', '/all-endings', '/mini-games'],
+    relatedRoutes: [
+      '/play-online',
+      '/content-warnings',
+      '/all-endings',
+      '/mini-games',
+    ],
     body: [
       {
         heading: 'Official download path',
@@ -471,7 +491,7 @@ export const guides: Guide[] = [
       {
         question: 'Where can I download The False Sun?',
         answer:
-          'Use Oniray’s official itch.io page. This site links to the official page and does not host game files.',
+          'Use Oniray’s official itch.io page for downloadable builds. This site also offers a browser play page.',
       },
       {
         question: 'Is The False Sun on Android?',
@@ -508,7 +528,12 @@ export const guides: Guide[] = [
     sourceNotes:
       'Official-only page. Warnings are based on the official itch.io mature-audience notice and tag list rather than creator videos or community retellings.',
     tags: ['Warnings', 'Mature', 'Spoiler Light'],
-    relatedRoutes: ['/download', '/all-endings', '/silas-route'],
+    relatedRoutes: [
+      '/play-online',
+      '/download',
+      '/all-endings',
+      '/silas-route',
+    ],
     body: [
       {
         heading: 'Spoiler-light warning summary',

@@ -42,6 +42,7 @@ const CLIENT_MESSAGE_NAMESPACES = [
 
 const MARKETING_NAVBAR_KEYS = [
   'home',
+  'play',
   'allEndings',
   'ending20',
   'silasRoute',

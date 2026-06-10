@@ -34,8 +34,8 @@ export default function TermsOfServicePage() {
           guidance, not official instructions.
         </p>
         <p className="leading-8 text-[#C7BAA7]">
-          Do not use this site to distribute copied game files, unsafe APKs,
-          modified clients, automation scripts, explicit adult content, or
+          Do not use this site to distribute unauthorized game files, unsafe
+          APKs, modified clients, automation scripts, explicit adult content, or
           copied game script.
         </p>
         <p className="leading-8 text-[#C7BAA7]">

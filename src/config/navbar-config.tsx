@@ -5,6 +5,7 @@ import type { NestedMenuItem } from '@/types';
 import {
   BookOpen,
   Download,
+  Gamepad2,
   HeartPulse,
   ListChecks,
   ShieldAlert,
@@ -16,6 +17,12 @@ export function useNavbarLinks(): NestedMenuItem[] {
   const t = useTranslations('Marketing.navbar');
 
   return [
+    {
+      title: t('play.title'),
+      href: Routes.Play,
+      external: false,
+      icon: <Gamepad2 className="size-4" />,
+    },
     {
       title: t('allEndings.title'),
       href: Routes.AllEndings,

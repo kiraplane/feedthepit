@@ -2,7 +2,7 @@
   "Metadata": {
     "name": "The False Sun",
     "title": "The False Sun - Walkthrough, All Endings and Route Guide",
-    "description": "The False Sun guide for all endings, Ending 20, Silas route, Kyle route, mini-games, safe downloads, and mature-content warnings."
+    "description": "The False Sun guide with all endings, Ending 20, Silas route, Kyle route, play online, mini-games, official download help, and mature-content warnings."
   },
   "Common": {
     "premium": "Premium",
@@ -290,6 +290,9 @@
       "home": {
         "title": "Home"
       },
+      "play": {
+        "title": "Play Online"
+      },
       "allEndings": {
         "title": "All Endings"
       },
@@ -313,10 +316,11 @@
       }
     },
     "footer": {
-      "tagline": "An unofficial walkthrough guide for The False Sun endings, Ending 20, Silas and Kyle routes, mini-games, downloads, and spoiler-safe warnings.",
+      "tagline": "An unofficial play-online and walkthrough guide for The False Sun endings, Ending 20, Silas and Kyle routes, mini-games, downloads, and spoiler-safe warnings.",
       "walkthrough": {
         "title": "Walkthrough",
         "items": {
+          "play": "Play Online",
           "allEndings": "All Endings",
           "ending20": "Ending 20",
           "silasRoute": "Silas Route",

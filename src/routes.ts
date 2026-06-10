@@ -13,6 +13,7 @@ export enum Routes {
   Disclaimer = '/disclaimer',
 
   // The False Sun walkthrough routes
+  Play = '/play-online',
   AllEndings = '/all-endings',
   Ending20 = '/ending-20',
   SilasRoute = '/silas-route',

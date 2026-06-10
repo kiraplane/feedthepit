@@ -12,6 +12,11 @@ export function useFooterLinks(): NestedMenuItem[] {
       title: t('walkthrough.title'),
       items: [
         {
+          title: t('walkthrough.items.play'),
+          href: Routes.Play,
+          external: false,
+        },
+        {
           title: t('walkthrough.items.allEndings'),
           href: Routes.AllEndings,
           external: false,

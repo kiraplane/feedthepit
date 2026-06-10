@@ -14,11 +14,12 @@ export const siteFacts = {
     'https://img.itch.zone/aW1nLzI3NTUxNjgxLmpwZw==/original/96%2Fy%2FZ.jpg',
   officialHeroImage:
     'https://img.itch.zone/aW1nLzI3NTY2NDg0LmpwZw==/original/X6dXMg.jpg',
+  browserGameUrl: 'https://s.thefalsesun.org/games/the-false-sun/index.html',
   genre: 'Visual novel',
   releaseSnapshot:
-    'Released visual novel on itch.io; official page showed Windows, macOS, Linux, and Android downloads when checked on 2026-06-08.',
+    'Released visual novel on itch.io; official page showed Windows, macOS, Linux, and Android downloads when checked on 2026-06-08. The play page lets visitors start the game online before reading route spoilers.',
   positioning:
-    'A lightweight, spoiler-marked walkthrough and all endings guide for players stuck on routes, mini-games, and Ending 20.',
+    'A lightweight, spoiler-marked play-online, walkthrough, and all endings guide for players stuck on routes, mini-games, and Ending 20.',
 } as const;
 
 export const gameFacts: GameFact[] = [
@@ -29,7 +30,8 @@ export const gameFacts: GameFact[] = [
   },
   {
     label: 'Known platforms',
-    value: 'Windows, macOS, Linux, and Android on the official itch.io page.',
+    value:
+      'Web browser on this site, plus Windows, macOS, Linux, and Android on the official itch.io page.',
   },
   {
     label: 'Main search demand',
@@ -117,6 +119,16 @@ export const keywordMatrix: KeywordMatrixItem[] = [
     status: 'keep',
     evidence: 'SERP contains walkthrough and all-endings videos/transcripts.',
     notes: 'Homepage and guide index should answer this query quickly.',
+  },
+  {
+    keyword: 'play the false sun online',
+    intent: 'Launch the browser version before reading route spoilers.',
+    route: '/play-online',
+    priority: 'P0',
+    status: 'keep',
+    evidence: 'Dedicated browser-play demand is covered by the play page.',
+    notes:
+      'Use a mature-content launch gate and strong links to endings and download guidance.',
   },
   {
     keyword: 'the false sun silas route',

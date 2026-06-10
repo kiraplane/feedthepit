@@ -15,6 +15,7 @@ import {
 import Image from 'next/image';
 
 const relatedRouteLabels: Record<string, string> = {
+  '/play-online': 'Play Online',
   '/all-endings': 'All Endings',
   '/ending-20': 'Ending 20',
   '/silas-route': 'Silas Route',

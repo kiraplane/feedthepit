@@ -32,7 +32,8 @@ export default function DisclaimerPage() {
         <p className="leading-8 text-[#C7BAA7]">
           The False Sun, its story, art, characters, music, code, and official
           game files belong to their respective creator and rights holders. This
-          site does not host or redistribute the game.
+          site does not redistribute unauthorized copies, modified clients, or
+          unsafe mirrors.
         </p>
         <p className="leading-8 text-[#C7BAA7]">
           Route notes are written from public source checks, community demand,

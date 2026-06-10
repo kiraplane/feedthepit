@@ -17,6 +17,7 @@ import {
   BookOpen,
   Download,
   Film,
+  Gamepad2,
   HeartPulse,
   ListChecks,
   ShieldAlert,
@@ -25,6 +26,12 @@ import {
 import Image from 'next/image';
 
 const primaryLinks = [
+  {
+    title: 'Play Online',
+    body: 'Start the game before opening spoilers.',
+    href: '/play-online',
+    icon: Gamepad2,
+  },
   {
     title: 'All Endings',
     body: 'Track all 20 route slots with save points and confidence notes.',
@@ -92,7 +99,7 @@ export function FalseSunHomePage() {
         },
         applicationCategory: 'Game',
         genre: ['Visual Novel', 'Horror', 'Romance'],
-        gamePlatform: ['Windows', 'macOS', 'Linux', 'Android'],
+        gamePlatform: ['Web Browser', 'Windows', 'macOS', 'Linux', 'Android'],
         url: siteFacts.officialItchUrl,
       },
     ],
@@ -115,8 +122,8 @@ export function FalseSunHomePage() {
             </h1>
             <p className="max-w-2xl text-lg leading-8 text-[#E1D2B9] md:text-xl">
               A lightweight guide hub for all 20 endings, Ending 20, Silas and
-              Kyle route cleanup, farm mini-games, safe downloads, and
-              spoiler-marked mature-content notes.
+              Kyle route cleanup, play online, farm mini-games, safe downloads,
+              and spoiler-marked mature-content notes.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button
@@ -135,6 +142,16 @@ export function FalseSunHomePage() {
               >
                 <LocaleLink href="/ending-20">Solve Ending 20</LocaleLink>
               </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="border-[#E7C77C] bg-[#0A0F0C]/50 text-[#F7E8C9] hover:bg-[#1B231D]"
+              >
+                <LocaleLink href="/play-online">
+                  <Gamepad2 className="size-4" />
+                  Play online
+                </LocaleLink>
+              </Button>
             </div>
             <p className="text-sm leading-6 text-[#C7BAA7]">
               Checked {checkedAt}. This fan site covers Oniray&apos;s visual
@@ -143,7 +160,7 @@ export function FalseSunHomePage() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-12 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
             {primaryLinks.map((item) => (
               <LocaleLink
                 key={item.href}
@@ -366,8 +383,9 @@ export function FalseSunHomePage() {
             </div>
             <p className="mt-4 max-w-3xl text-sm leading-7 text-[#C7BAA7]">
               This site is unofficial, spoiler-marked, and written for route
-              clarity. It does not host game files, copy scripts, publish
-              explicit adult scene walkthroughs, or recommend unsafe APKs.
+              clarity. It keeps official downloadable builds on itch.io and does
+              not copy scripts, publish explicit adult scene walkthroughs, or
+              recommend unsafe APKs.
             </p>
           </div>
         </Container>

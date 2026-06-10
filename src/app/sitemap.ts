@@ -5,6 +5,7 @@ import { getCanonicalBaseUrl } from '../lib/urls/urls';
 
 const coreRoutes = [
   Routes.Root,
+  Routes.Play,
   Routes.AllEndings,
   Routes.Ending20,
   Routes.SilasRoute,
@@ -34,17 +35,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         url: `${baseUrl}${localizedRoute}`,
         lastModified: stableLastModified,
         changeFrequency:
-          route === Routes.Root || route === Routes.AllEndings
+          route === Routes.Root ||
+          route === Routes.Play ||
+          route === Routes.AllEndings
             ? 'daily'
             : 'weekly',
         priority:
           route === Routes.Root
             ? 1
-            : route === Routes.AllEndings ||
-                route === Routes.Ending20 ||
-                route === Routes.Download
-              ? 0.9
-              : 0.8,
+            : route === Routes.Play
+              ? 0.95
+              : route === Routes.AllEndings ||
+                  route === Routes.Ending20 ||
+                  route === Routes.Download
+                ? 0.9
+                : 0.8,
       });
     });
   });
