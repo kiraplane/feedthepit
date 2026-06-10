@@ -1,3 +1,4 @@
+import { AdsterraAdFrame } from '@/components/ads/adsterra-ad';
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
 import { buildGuideMetadata, renderGuidePage } from '../guide-page';

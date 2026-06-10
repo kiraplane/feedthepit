@@ -1,3 +1,7 @@
+import {
+  AdsterraAdFrame,
+  AdsterraNativeBanner,
+} from '@/components/ads/adsterra-ad';
 import Container from '@/components/layout/container';
 import { JsonLd } from '@/components/seo/json-ld';
 import { Badge } from '@/components/ui/badge';
@@ -180,6 +184,8 @@ export function FalseSunHomePage() {
         </Container>
       </section>
 
+      <AdsterraNativeBanner className="border-[#493A34] border-b bg-[#0A0F0C]" />
+
       <section className="border-[#493A34] border-b bg-[#111612] py-12">
         <Container className="grid gap-6 px-4 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
@@ -260,6 +266,12 @@ export function FalseSunHomePage() {
           </div>
         </Container>
       </section>
+
+      <AdsterraAdFrame
+        slot="banner-300x250"
+        className="border-[#493A34] border-b bg-[#0A0F0C] py-8"
+        label
+      />
 
       <section className="border-[#493A34] border-y bg-[#111612] py-12">
         <Container className="space-y-6 px-4">

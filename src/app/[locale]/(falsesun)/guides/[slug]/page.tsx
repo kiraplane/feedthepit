@@ -1,3 +1,7 @@
+import {
+  AdsterraAdFrame,
+  AdsterraSideRails,
+} from '@/components/ads/adsterra-ad';
 import { getGuide, guides } from '@/data/falsesun/guides';
 import { routing } from '@/i18n/routing';
 import { redirect } from 'next/navigation';

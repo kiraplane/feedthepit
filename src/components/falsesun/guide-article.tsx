@@ -1,3 +1,7 @@
+import {
+  AdsterraAdFrame,
+  AdsterraSideRails,
+} from '@/components/ads/adsterra-ad';
 import { FaqSection } from '@/components/falsesun/faq-section';
 import Container from '@/components/layout/container';
 import { JsonLd } from '@/components/seo/json-ld';
@@ -70,6 +74,7 @@ export function GuideArticle({
   return (
     <div className="bg-[#0A0F0C] py-10 text-[#F7E8C9]">
       <JsonLd data={jsonLd} />
+      <AdsterraSideRails />
       <Container className="grid gap-8 px-4 lg:grid-cols-[minmax(0,1fr)_320px]">
         <article className="overflow-hidden rounded-lg border border-[#493A34] bg-[#111612]">
           <div className="relative aspect-[16/8] min-h-[260px] border-[#493A34] border-b">
@@ -155,6 +160,8 @@ export function GuideArticle({
             ) : null}
 
             <div className="space-y-8">
+              <AdsterraAdFrame slot="banner-300x250" className="mb-8" label />
+
               {guide.body.map((section) => (
                 <section key={section.heading}>
                   <h2 className="font-display text-2xl font-bold text-[#F7E8C9]">
