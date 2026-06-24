@@ -92,11 +92,11 @@ function readCloudflareEnv(name: string) {
 }
 
 function readEnv(name: string) {
-  return cleanEnvValue(process.env[name]) || readCloudflareEnv(name);
+  return readCloudflareEnv(name) || cleanEnvValue(process.env[name]);
 }
 
 export function isAdsterraEnabled() {
-  return readEnv('ADSTERRA_ADS_ENABLED') !== 'false';
+  return readEnv('ADSTERRA_ADS_ENABLED') === 'true';
 }
 
 export function getAdsterraSlot(id: AdsterraSlotId): AdsterraSlotConfig {
