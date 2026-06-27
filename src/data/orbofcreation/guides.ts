@@ -886,6 +886,160 @@ export const guides: Guide[] = [
       },
     ],
   },
+  {
+    slug: 'agromancy-guide',
+    path: '/guides/agromancy',
+    title: 'Orb of Creation Agromancy Guide',
+    seoTitle: 'Orb of Creation Agromancy Guide - Growth, Materials and Route',
+    seoDescription:
+      'Use this Orb of Creation Agromancy guide to plan growth spells, material loops, research timing, rituals, and when to pivot away from a slow route.',
+    summary:
+      'Agromancy is strongest when it supports a real material loop. Use it to feed research, rituals, and spell uptime instead of casting it because the number is green.',
+    category: 'Systems',
+    difficulty: 'Intermediate',
+    coverImageUrl: localCover('orb-of-creation-og.png'),
+    publishedAt: checkedAt,
+    updatedAt: checkedAt,
+    sourceStrategy: 'manual_data',
+    videoSearchQueries: [
+      'Orb of Creation agromancy',
+      'Orb of Creation agromancy guide',
+      'Orb of Creation druidry agromancy build',
+    ],
+    sourceNotes:
+      'Created for agromancy long-tail demand and written as route logic rather than fixed formula claims.',
+    tags: ['Agromancy', 'Materials', 'Spells'],
+    relatedRoutes: [
+      '/research',
+      '/spells',
+      '/rituals',
+      '/guides/alchemy-druidry',
+      '/guides/new-game-plus',
+    ],
+    body: [
+      {
+        heading: 'Use Agromancy to feed a bottleneck',
+        paragraphs: [
+          'Agromancy should not be treated as a random growth button. The useful question is what resource loop it improves. If it helps you keep materials flowing into research, rituals, or a spell chain, it belongs in the route. If it only makes a number rise while your real blocker sits elsewhere, pause.',
+          'Orb of Creation rewards systems that reinforce each other. Agromancy works best when the material gain, spell cost, and next unlock are all pointed at the same goal.',
+        ],
+      },
+      {
+        heading: 'Check the route before casting deeper',
+        paragraphs: [
+          'Before leaning into Agromancy, name the next unlock or ritual it supports. Then check whether your recharge, storage, and conversion layers can actually use the extra material. A resource that overflows or sits idle is not solving the run.',
+          'If the route feels slow, do not only cast harder. Look for the missing support layer: research, storage, spell cadence, or a ritual that changes the value of the whole loop.',
+        ],
+        bullets: [
+          'Need more raw material: Agromancy can be the right lane.',
+          'Need better conversion: check alchemy and research first.',
+          'Need a reset payoff: check New Game+ and ritual timing.',
+          'Need speed: compare spell uptime before adding more cost.',
+        ],
+      },
+      {
+        heading: 'When to pivot away',
+        paragraphs: [
+          'Pivot when Agromancy is no longer connected to the next progress gate. Some runs want stronger spell effects, some want ritual timing, and some want research that changes the economy more than another cast.',
+          'A good pivot does not mean the system was bad. It means the run has moved to a different bottleneck.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Is Agromancy good in Orb of Creation?',
+        answer:
+          'Yes, when it feeds a real material or research bottleneck. It is weaker when the extra resource has nowhere useful to go.',
+      },
+      {
+        question: 'Should beginners rush Agromancy?',
+        answer:
+          'Beginners should first understand spells, research, and rituals, then use Agromancy when a material route clearly needs it.',
+      },
+      {
+        question: 'What should I read with Agromancy?',
+        answer:
+          'Read spells, research, rituals, alchemy/druidry, and New Game+ together because those systems decide whether the route works.',
+      },
+    ],
+  },
+  {
+    slug: 'loadouts-guide',
+    path: '/guides/loadouts',
+    title: 'Orb of Creation Loadouts Guide',
+    seoTitle: 'Orb of Creation Loadouts Guide - Spell Routes and Pivot Rules',
+    seoDescription:
+      'Build better Orb of Creation loadouts by choosing spell routes, material goals, research timing, rituals, and pivot rules for each run.',
+    summary:
+      'A good loadout is not a permanent shopping list. It is a set of spells and systems that answer the next bottleneck cleanly.',
+    category: 'Progression',
+    difficulty: 'Intermediate',
+    coverImageUrl: localCover('orb-of-creation-og.png'),
+    publishedAt: checkedAt,
+    updatedAt: checkedAt,
+    sourceStrategy: 'manual_data',
+    videoSearchQueries: [
+      'Orb of Creation loadouts',
+      'Orb of Creation best build',
+      'Orb of Creation spell loadout',
+    ],
+    sourceNotes:
+      'Created for loadout/build demand and aligned with the site’s decision-first system pages.',
+    tags: ['Loadouts', 'Builds', 'Spells'],
+    relatedRoutes: [
+      '/spells',
+      '/research',
+      '/rituals',
+      '/guides/agromancy',
+      '/guides/new-game-plus',
+    ],
+    body: [
+      {
+        heading: 'Start every loadout with one job',
+        paragraphs: [
+          'The strongest Orb of Creation loadouts begin with a job: produce a resource, unlock research, sustain a spell chain, prepare a ritual, or set up the next reset. If the loadout is trying to do everything, it usually does nothing cleanly.',
+          'Pick the job first, then choose spells and support systems that make that job easier. This keeps the run readable even when many buttons become available.',
+        ],
+      },
+      {
+        heading: 'Match spells to the current bottleneck',
+        paragraphs: [
+          'If the bottleneck is raw material, use spells and systems that increase supply. If the bottleneck is conversion, improve the layer that turns one resource into another. If the bottleneck is timing, reduce downtime before adding more expensive effects.',
+          'A loadout should change when the bottleneck changes. Holding the same setup after the run shifts is how a strong opening turns into a slow midgame.',
+        ],
+      },
+      {
+        heading: 'Use pivot rules',
+        paragraphs: [
+          'Before a run gets messy, decide when you will pivot. For example: pivot when storage caps too often, pivot when research is gated by a different material, or pivot when a ritual payoff becomes stronger than another production spell.',
+          'This makes loadouts feel intentional. You are not abandoning a build; you are moving to the next problem.',
+        ],
+        bullets: [
+          'Production loadout: use when raw material is the wall.',
+          'Conversion loadout: use when resources exist but do not become progress.',
+          'Ritual loadout: use when the payoff beats another incremental spell.',
+          'Reset loadout: use when New Game+ value matters more than local growth.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What is the best Orb of Creation loadout?',
+        answer:
+          'The best loadout is the one that solves your current bottleneck. There is no single permanent setup for every run.',
+      },
+      {
+        question: 'When should I change loadouts?',
+        answer:
+          'Change when the run shifts from production to conversion, research, rituals, or reset value.',
+      },
+      {
+        question: 'Should loadouts include Agromancy?',
+        answer:
+          'Include Agromancy when material growth supports the route. Skip it when another system is the real blocker.',
+      },
+    ],
+  },
 ];
 
 export const featuredGuides = guides.filter((guide) =>
