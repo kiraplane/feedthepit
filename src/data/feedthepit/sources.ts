@@ -22,13 +22,13 @@ export const siteFacts = {
   releaseSnapshot:
     'Steam lists Feed The Pit as released on Jun 30, 2026. Act 1 is available at launch, with Acts 2 and 3 planned as free updates.',
   browserSnapshot:
-    'The authorized play-online build is the mooncrustgames HTML5 dark incremental from itch.io. It is a separate browser companion experience, not the full Curious Fox Sox Steam release.',
+    'The play-online route offers a short dark incremental browser experience. Keep it separate from the full Steam story campaign.',
   positioning:
-    'A player-first Feed The Pit wiki for Act 1, investigation cards, monster survival, endings, achievements, Steam setup, safe download help, and the authorized browser play page.',
+    'A player-first Feed The Pit wiki for investigation cards, monster survival, walkthroughs, endings, achievements, Steam setup, safe download help, and browser play.',
 } as const;
 
 export const siteDescription =
-  'Feed The Pit wiki for Act 1 guide, cards, monsters, endings, Steam, download help, and an authorized play-online browser build.';
+  'Feed The Pit wiki for guides, cards, monsters, endings, Steam, download help, and browser play.';
 
 export const gameFacts: GameFact[] = [
   {
@@ -44,7 +44,7 @@ export const gameFacts: GameFact[] = [
   {
     label: 'Browser play here',
     value:
-      'The play-online page self-hosts the mooncrustgames HTML5 itch build with permission. Treat it as a short dark incremental companion, not the full Steam game.',
+      'The play-online page offers a short dark incremental browser experience. Treat it as quick play, not the full Steam story campaign.',
   },
   {
     label: 'Main guide clusters',

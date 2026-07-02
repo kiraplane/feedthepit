@@ -143,11 +143,11 @@ export const guides: Guide[] = [
     slug: 'play-online',
     path: '/play-online',
     title: 'Feed The Pit Play Online',
-    seoTitle: 'Feed The Pit Play Online - Authorized Browser Build',
+    seoTitle: 'Feed The Pit Play Online - Browser Game',
     seoDescription:
-      'Play the authorized Feed The Pit browser build here, learn how the mooncrustgames itch version works, and know how it differs from the Steam game.',
+      'Play Feed The Pit in your browser, learn the 3-layer incremental loop, and know when to switch to the Steam story campaign.',
     summary:
-      'The play-online page hosts the authorized mooncrustgames HTML5 build: a short dark incremental about feeding a hungry pit, separate from the Curious Fox Sox Steam horror release.',
+      'The play-online page gives you a short dark incremental about feeding a hungry pit, while Steam is the PC story campaign.',
     category: 'Browser',
     difficulty: 'Status',
     coverImageUrl: itchCover('feed-the-pit-browser-layer-one.png'),
@@ -172,8 +172,8 @@ export const guides: Guide[] = [
       {
         heading: 'What you are playing on this page',
         paragraphs: [
-          'The browser game hosted here is the mooncrustgames HTML5 Feed The Pit from itch.io. It is a dark incremental about keeping a hungry pit satisfied through escalating offerings, buildings, and short-run decisions.',
-          'It is not the same build as the Curious Fox Sox Steam release. The Steam game is a story-driven investigative horror game. The browser build is still useful because it satisfies play-online demand safely and keeps players away from random mirrors.',
+          'The browser game is a dark incremental about keeping a hungry pit satisfied through escalating offerings, buildings, and short-run decisions.',
+          'It is not the same experience as the Steam story campaign. Treat the browser version as quick play, and use Steam when you want the investigation cards, monsters, achievements, and act progression.',
         ],
       },
       {
@@ -191,7 +191,7 @@ export const guides: Guide[] = [
       {
         heading: 'When Steam is the better answer',
         paragraphs: [
-          'Choose Steam when you want the Curious Fox Sox Act 1 horror game: card-based investigation, Carrister Valley, mission monsters, achievements, and the future Acts 2 and 3 update path.',
+          'Choose Steam when you want the Act 1 story campaign: card-based investigation, Carrister Valley, mission monsters, achievements, and the future Acts 2 and 3 update path.',
           'Choose this page when your search intent is simply to play Feed The Pit online in a browser. The two experiences can sit beside each other, but they should not be treated as one shared set of mechanics.',
         ],
       },
@@ -200,15 +200,15 @@ export const guides: Guide[] = [
       {
         question: 'Can I play Feed The Pit online here?',
         answer:
-          'Yes. This page self-hosts the mooncrustgames HTML5 itch build with permission from the project requirements.',
+          'Yes. You can start a browser version here and use the notes on the page to understand its shorter incremental loop.',
       },
       {
-        question: 'Is the browser build the Steam game?',
+        question: 'Is the browser version the Steam game?',
         answer:
-          'No. The browser build is a separate dark incremental from mooncrustgames. The Steam game is the Curious Fox Sox investigative horror release.',
+          'No. The browser version is a short dark incremental. The Steam game is the PC investigative horror story campaign.',
       },
       {
-        question: 'How long is the browser build?',
+        question: 'How long is the browser version?',
         answer:
           'The itch page describes it as a 3-layer demo that takes about 20 to 25 minutes and ends at THE RED.',
       },
@@ -831,9 +831,9 @@ export const guides: Guide[] = [
           'At launch, yes. Steam says Act 1 is available and Acts 2 and 3 will release later as free updates.',
       },
       {
-        question: 'Is the itch browser build the Steam game?',
+        question: 'Is the browser version the Steam game?',
         answer:
-          'No. The browser build hosted on this site is a separate mooncrustgames HTML5 experience.',
+          'No. The browser version is a separate short incremental experience.',
       },
     ],
   },
@@ -843,9 +843,9 @@ export const guides: Guide[] = [
     title: 'Feed The Pit Download Guide',
     seoTitle: 'Feed The Pit Download - Steam, Browser Play and Safe Links',
     seoDescription:
-      'Download Feed The Pit safely through Steam, play the authorized browser build here, and avoid APK mirrors, cracked clients, and fake downloads.',
+      'Download Feed The Pit safely through Steam, play in browser here, and avoid APK mirrors, cracked clients, and fake downloads.',
     summary:
-      'Use Steam for the Curious Fox Sox full game and this site for the authorized browser build. Avoid mirrors, APKs, cracked clients, and fake code pages.',
+      'Use Steam for the full PC story campaign and this site for browser play. Avoid mirrors, APKs, cracked clients, and fake code pages.',
     category: 'Safety',
     difficulty: 'Status',
     coverImageUrl: localCover('feed-the-pit-header.jpg'),
@@ -865,8 +865,8 @@ export const guides: Guide[] = [
       {
         heading: 'Use official paths only',
         paragraphs: [
-          'For the full Curious Fox Sox game, use Steam. That gives you the current Act 1 release, achievements, updates, file verification, and future Acts 2 and 3 when they ship.',
-          'For browser play, use the play-online page here. It self-hosts the authorized mooncrustgames HTML5 build from itch.io and links back to the original itch page.',
+          'For the full PC story campaign, use Steam. That gives you the current Act 1 release, achievements, updates, file verification, and future Acts 2 and 3 when they ship.',
+          'For quick browser play, use the play-online page here and keep it separate from the Steam campaign.',
         ],
       },
       {
@@ -887,7 +887,7 @@ export const guides: Guide[] = [
       {
         question: 'Where should I download Feed The Pit?',
         answer:
-          'Download the full game from Steam. Use this site only for the authorized browser build.',
+          'Download the full PC game from Steam. Use this site for browser play and guide pages.',
       },
       {
         question: 'Is there a Feed The Pit APK?',
@@ -905,11 +905,11 @@ export const guides: Guide[] = [
     slug: 'itch-io',
     path: '/itch-io',
     title: 'Feed The Pit itch.io Guide',
-    seoTitle: 'Feed The Pit itch.io - Browser Build and Steam Difference',
+    seoTitle: 'Feed The Pit Browser Version - Steam Difference',
     seoDescription:
-      'Understand the Feed The Pit itch.io browser build by mooncrustgames, how the 3-layer dark incremental works, and how it differs from Steam.',
+      'Understand the Feed The Pit browser version, how the 3-layer dark incremental works, and how it differs from Steam.',
     summary:
-      'The itch page is the source for the browser companion: a 3-layer dark incremental from mooncrustgames, not the Curious Fox Sox Steam horror game.',
+      'The browser version is a 3-layer dark incremental, not the Steam story campaign.',
     category: 'Browser',
     difficulty: 'Status',
     coverImageUrl: itchCover('feed-the-pit-browser-layer-two.png'),
@@ -927,23 +927,23 @@ export const guides: Guide[] = [
     relatedRoutes: ['/play-online', '/download', '/steam'],
     body: [
       {
-        heading: 'The itch build is a different experience',
+        heading: 'The browser version is a different experience',
         paragraphs: [
-          'The mooncrustgames itch page describes Feed The Pit as a dark incremental about keeping a hole satisfied. You begin with grain, then escalate through offerings, buildings, layers, and the pit speaking back.',
-          'That is very different from the Steam release by Curious Fox Sox. Both share a title and pit theme, but the mechanics and creators are different. This site keeps that distinction clear so searchers do not land on the wrong expectation.',
+          'This browser version plays as a dark incremental about keeping a hole satisfied. You begin with grain, then escalate through offerings, buildings, layers, and the pit speaking back.',
+          'That is very different from the Steam story campaign. Both share a title and pit theme, but the mechanics are different, so choose the page that matches what you want to play.',
         ],
       },
       {
-        heading: 'What the browser build includes',
+        heading: 'What the browser version includes',
         paragraphs: [
           'The itch page describes a 3-layer demo that lasts roughly 20 to 25 minutes and ends at THE RED. It recommends headphones because sound is part of the mood.',
-          'The browser build has HTML5 platform support, pixel art, incremental/clicker tags, and a compact structure. It is a good play-online answer, but not a replacement for Steam Act 1.',
+          'The browser version has pixel art, incremental/clicker structure, and a compact run length. It is a good play-online answer, but not a replacement for Steam Act 1.',
         ],
       },
       {
-        heading: 'Why self-host it here',
+        heading: 'Why use the play-online page',
         paragraphs: [
-          'The project requirement says permission was obtained to self-host the itch build. Self-hosting lets the play-online page load the game beside guide text, screenshots, version notes, and safe links without sending players to mirrors.',
+          'The play-online page keeps the game, screenshots, version notes, and safe next links in one place, so players do not need to search through random mirrors.',
         ],
       },
     ],
@@ -955,12 +955,12 @@ export const guides: Guide[] = [
       {
         question: 'Is the itch build free?',
         answer:
-          'The page is a browser-play HTML5 release on itch. Use the official itch page for creator context and this site for the authorized self-hosted build.',
+          'The browser version can be played in a web browser. Use Steam when you want the full PC story campaign.',
       },
       {
         question: 'Why does the site also link Steam?',
         answer:
-          'Steam is the official source for the Curious Fox Sox story-driven horror game.',
+          'Steam is where PC players should go for the story-driven horror campaign, achievements, updates, and future acts.',
       },
     ],
   },
@@ -1033,9 +1033,9 @@ export const guides: Guide[] = [
     title: 'Feed The Pit Mobile and APK Safety',
     seoTitle: 'Feed The Pit Mobile - APK Safety and Browser Play Status',
     seoDescription:
-      'Check Feed The Pit mobile status, why APK mirrors are unsafe, and when the authorized browser build is the better play-online option.',
+      'Check Feed The Pit mobile status, why APK mirrors are unsafe, and when browser play is the better option.',
     summary:
-      'No official mobile release was found. Use Steam for the full game or the authorized browser page for HTML5 play; avoid APK mirrors and fake mobile ports.',
+      'No official mobile release was found. Use Steam for the full PC game or the browser page for quick play; avoid APK mirrors and fake mobile ports.',
     category: 'Safety',
     difficulty: 'Status',
     coverImageUrl: itchCover('feed-the-pit-browser-layer-three.png'),
@@ -1055,14 +1055,14 @@ export const guides: Guide[] = [
       {
         heading: 'No official mobile release found',
         paragraphs: [
-          'Steam lists the Curious Fox Sox game for Windows, and the mooncrustgames browser build is HTML5 on itch.io. During this check, no official Android, iOS, or APK release was found for the Steam game.',
+          'Steam lists the story campaign for Windows. During this check, no official Android, iOS, or APK release was found for the Steam game.',
           'That means APK pages should be treated as unsafe unless an official developer channel announces otherwise. New horror games are common bait for fake mobile download pages.',
         ],
       },
       {
         heading: 'Use browser play instead of APK mirrors',
         paragraphs: [
-          'If your goal is to play something on a phone or tablet, try the play-online page first. It hosts the authorized HTML5 browser build. Small screens may be less comfortable, but it is safer than installing an unknown APK.',
+          'If your goal is to play something on a phone or tablet, try the play-online page first. Small screens may be less comfortable, but browser play is safer than installing an unknown APK.',
           'If you want the full Act 1 horror release, use Steam on a Windows PC that meets the Vulkan requirement.',
         ],
       },
@@ -1081,7 +1081,7 @@ export const guides: Guide[] = [
       {
         question: 'Can I play on mobile browser?',
         answer:
-          'You can try the authorized browser build, but the full Steam horror game is not the same thing and is not a mobile port.',
+          'You can try the browser version, but the full Steam horror game is not the same thing and is not a mobile port.',
       },
       {
         question: 'Are Feed The Pit APKs safe?',

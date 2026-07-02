@@ -49,9 +49,9 @@ const keywordLinks = [
 
 const beginnerJourney = [
   {
-    title: 'Launch the browser build',
+    title: 'Play in browser',
     href: '/play-online',
-    body: 'Try the authorized mooncrustgames HTML5 build safely.',
+    body: 'Start a quick run without hunting for download mirrors.',
   },
   {
     title: 'Read the Act 1 route',
@@ -69,9 +69,9 @@ const beginnerJourney = [
     body: 'Watch the mission threat before spending every item.',
   },
   {
-    title: 'Choose the right source',
+    title: 'Choose how to play',
     href: '/steam',
-    body: 'Use Steam for Act 1 and future free act updates.',
+    body: 'Use Steam for the PC story release and future act updates.',
   },
 ] as const;
 
@@ -79,11 +79,11 @@ const coreModules = [
   {
     title: 'Play and Version',
     icon: Gamepad2,
-    body: 'Start with the authorized browser build if you want instant play, then use Steam for the Curious Fox Sox Act 1 release.',
+    body: 'Start online if you want instant play, then use Steam for the PC story release, achievements, and future act updates.',
     links: [
       ['Play online', '/play-online'],
-      ['Steam Act 1', '/steam'],
-      ['itch.io build', '/itch-io'],
+      ['Steam version', '/steam'],
+      ['Browser version', '/itch-io'],
     ],
   },
   {
@@ -484,13 +484,13 @@ export function FeedHomePage({ locale }: { locale?: Locale }) {
                 <div className="flex items-center gap-3">
                   <BadgeAlert className="size-5 text-[#E3483B]" />
                   <h2 className="font-display text-2xl font-bold text-white">
-                    Version clarity
+                    Choose your mode
                   </h2>
                 </div>
                 <p className="mt-4 text-sm leading-7 text-[#F0C9B3]">
-                  Browser play is the authorized mooncrustgames HTML5 build.
-                  Steam is the Curious Fox Sox Act 1 horror release, with Acts 2
-                  and 3 planned as free updates.
+                  Play online when you want a quick browser run. Use Steam for
+                  the PC story campaign, achievements, and the future Acts 2 and
+                  3 update path.
                 </p>
                 <Button
                   asChild

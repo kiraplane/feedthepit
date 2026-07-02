@@ -196,15 +196,15 @@ export function FeedGameFrame({
             <div className="absolute inset-x-0 bottom-0 p-5 md:p-8">
               <div className="max-w-2xl rounded-lg border border-[#E3483B]/40 bg-[#0B0708]/90 p-5 backdrop-blur">
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#E3483B]">
-                  Browser build
+                  Play in browser
                 </p>
                 <h2 className="mt-2 font-display text-2xl font-bold text-[#F2E7D0] md:text-3xl">
                   Try Feed The Pit in your browser
                 </h2>
                 <p className="mt-3 text-sm leading-7 text-[#E8D8C2]">
-                  The first launch loads the self-hosted HTML5 build from the
-                  authorized itch.io source. Use Steam for the Curious Fox Sox
-                  Act 1 horror release and this page for browser play.
+                  Start a quick browser session here. Use the Steam page when
+                  you want the full PC story release, achievements, and future
+                  act updates.
                 </p>
                 <Button
                   type="button"

@@ -174,15 +174,6 @@ export function GuideArticle({
               </div>
 
               <div className="p-5 md:p-8">
-                <section className="mb-8 rounded-lg border border-[#5B3132] bg-[#0B0708] p-4">
-                  <h2 className="font-display text-xl font-bold">
-                    {ui.sourceTitle}
-                  </h2>
-                  <p className="mt-2 text-sm leading-7 text-[#E8D8C2]">
-                    {ui.sourceBody}
-                  </p>
-                </section>
-
                 {guide.video ? (
                   <section className="mb-8 overflow-hidden rounded-lg border border-[#5B3132] bg-black">
                     <iframe

@@ -60,8 +60,6 @@ export interface GuidesIndexContent {
 }
 
 export interface GuideArticleUi {
-  sourceTitle: string;
-  sourceBody: string;
   sectionsTitle: string;
   videoPrefix: string;
   videoSuffix: string;
@@ -168,19 +166,20 @@ export function getHomeContent(_locale?: Locale | string): HomeContent {
 
   return {
     badge: 'Independent Feed The Pit wiki',
-    metadataTitle: 'Feed The Pit Wiki - Act 1 Guide and Play Online',
+    metadataTitle:
+      'Feed The Pit Wiki - Guides, Cards, Monsters and Play Online',
     title: 'Feed The Pit',
     intro:
-      'Act 1 guide hub for the investigative horror game: cards, monsters, walkthrough, endings, achievements, Steam setup, safe downloads, and browser play.',
-    primaryCta: 'Start the Act 1 guide',
+      'Guide hub for the investigative horror game: cards, monsters, walkthrough, endings, achievements, Steam setup, safe downloads, and browser play.',
+    primaryCta: 'Start the beginner guide',
     playCta: 'Play online',
     steamCta: 'Steam page',
     scopeNote:
-      'Steam coverage focuses on the Curious Fox Sox horror game. The play-online page hosts the authorized mooncrustgames browser build and marks the difference clearly.',
+      'Use Steam for the PC story campaign and play-online when you want a quick browser session.',
     siteShapeEyebrow: 'Launch coverage',
     siteShapeTitle: 'Built around what players search first',
     siteShapeBody:
-      'The launch page set covers wiki, guide, play online, Steam, download, cards, monsters, walkthrough, Act 1, ending, achievements, Discord, and rendering-fix demand without inventing codes or tier lists.',
+      'The launch page set covers wiki, guide, play online, Steam, download, cards, monsters, walkthrough, ending, achievements, Discord, and rendering-fix demand without inventing codes or tier lists.',
     systemsEyebrow: 'Investigation loop',
     systemsTitle: 'Cards narrow the target while the monster rewrites the risk',
     systemsBody:
@@ -193,11 +192,11 @@ export function getHomeContent(_locale?: Locale | string): HomeContent {
     primaryLinks: {
       play: {
         title: 'Play Online',
-        body: 'Launch the authorized HTML5 browser build and learn why it differs from the Steam horror game.',
+        body: 'Start a quick browser run and keep the Steam story campaign separate.',
       },
       beginner: {
         title: 'Beginner Guide',
-        body: 'Start Act 1 with spoiler-light card, monster, item, and rank advice.',
+        body: 'Start with spoiler-light card, monster, item, and rank advice.',
       },
       cards: {
         title: 'Cards',
@@ -209,13 +208,13 @@ export function getHomeContent(_locale?: Locale | string): HomeContent {
       },
       steam: {
         title: 'Steam',
-        body: 'Check release date, Act 1 status, Vulkan requirements, and future act notes.',
+        body: 'Check release date, current story status, Vulkan requirements, and future update notes.',
       },
     },
     secondaryLinks: {
       walkthrough: {
         title: 'Walkthrough',
-        body: 'Use a spoiler-light Act 1 route before opening ending pages.',
+        body: 'Use a spoiler-light route before opening ending pages.',
       },
       actOne: {
         title: 'Act 1',
@@ -223,7 +222,7 @@ export function getHomeContent(_locale?: Locale | string): HomeContent {
       },
       download: {
         title: 'Download',
-        body: 'Use official Steam/browser paths and avoid APKs, cracks, and fake fixes.',
+        body: 'Use trusted play paths and avoid APKs, cracks, and fake fixes.',
       },
       discord: {
         title: 'Discord',
@@ -241,12 +240,12 @@ export function getHomeContent(_locale?: Locale | string): HomeContent {
       {
         question: 'Can I play Feed The Pit online here?',
         answer:
-          'Yes. The play-online page hosts the authorized mooncrustgames HTML5 build from itch.io.',
+          'Yes. The play-online page lets you start a browser version directly, while the Steam page points PC players to the story campaign.',
       },
       {
         question: 'Why is the browser game different from Steam?',
         answer:
-          'The Steam game is a Curious Fox Sox investigative horror release. The browser build is a separate mooncrustgames dark incremental with the same title.',
+          'The Steam game is a story-driven investigative horror release. The browser version is a shorter dark incremental experience with the same title.',
       },
       {
         question: 'Are there Feed The Pit codes or a tier list?',
@@ -275,7 +274,7 @@ export function getGuidesIndexContent(
       {
         question: 'Are these guides for Steam or browser play?',
         answer:
-          'Most guides cover the Steam Act 1 horror game. The play-online and itch.io pages cover the authorized browser build separately.',
+          'Most guides cover the Steam Act 1 story campaign. The play-online and browser-version pages focus on the shorter browser experience.',
       },
       {
         question: 'Will you add monster or card databases?',
@@ -288,15 +287,12 @@ export function getGuidesIndexContent(
 
 export function getGuideArticleUi(_locale?: Locale | string): GuideArticleUi {
   return {
-    sourceTitle: 'How to use this guide',
-    sourceBody:
-      'Start with the decision near the top, then use the sections below to solve the exact card, monster, route, platform, or safety problem in front of you.',
     sectionsTitle: 'Sections',
     videoPrefix: 'Walkthrough cross-check:',
     videoSuffix: 'use it as a supporting watch link.',
     officialTitle: 'Official links',
     officialBody:
-      'Use Steam for the Curious Fox Sox Act 1 release and the play-online page here for the authorized mooncrustgames browser build.',
+      'Use Steam for the Act 1 story campaign and the play-online page for a quick browser session.',
     officialLinkLabel: 'Open official Steam page',
     relatedTitle: 'Related pages',
     faqTitle: 'FAQ',
@@ -335,24 +331,24 @@ export const routeLabels: Record<string, string> = {
   '/guides/rendering-fixes': 'Rendering Fixes',
   '/steam': 'Steam Guide',
   '/download': 'Download Guide',
-  '/itch-io': 'itch.io Browser Build',
+  '/itch-io': 'Browser Version',
   '/discord': 'Discord Guide',
   '/mobile': 'Mobile and APK Safety',
   '/disclaimer': 'Disclaimer',
 };
 
 const playOnlineContent: PlayOnlineContent = {
-  metadataTitle: 'Feed The Pit Play Online - Authorized Browser Build',
+  metadataTitle: 'Feed The Pit Play Online - Browser Game',
   metadataDescription:
-    'Play the authorized Feed The Pit browser build, learn the 3-layer dark incremental loop, and understand how it differs from Steam Act 1.',
-  badge: 'Self-hosted browser build',
+    'Play Feed The Pit in your browser, learn the 3-layer incremental loop, and understand when to switch to the Steam Act 1 campaign.',
+  badge: 'Play in browser',
   title: 'Feed The Pit Play Online',
   intro:
-    'Run the authorized mooncrustgames HTML5 browser build, then use the guide notes below to understand offerings, layers, saves, screenshots, and the difference from the Curious Fox Sox Steam game.',
+    'Start a short browser run, then use the notes below to understand offerings, layers, saves, screenshots, and when the Steam campaign is the better next step.',
   beginnerButton: 'Beginner guide',
   steamButton: 'Steam guide',
   frameLabels: {
-    title: `${siteFacts.gameName} browser build`,
+    title: `${siteFacts.gameName} online`,
     loading: 'Loading Feed The Pit...',
     start: 'Run game',
     reset: 'Reload game',
@@ -362,14 +358,14 @@ const playOnlineContent: PlayOnlineContent = {
   },
   infoCards: [
     {
-      key: 'build',
-      title: 'Browser build',
-      body: 'This is the mooncrustgames HTML5 dark incremental from itch.io, self-hosted with permission.',
+      key: 'play',
+      title: 'Instant play',
+      body: 'Start in the browser, read each request from the pit, and build toward the next layer.',
     },
     {
       key: 'steam',
-      title: 'Steam is separate',
-      body: 'The Curious Fox Sox Steam release is the Act 1 investigative horror game with cards, monsters, achievements, and future acts.',
+      title: 'Steam version',
+      body: 'Choose Steam when you want the PC story campaign with investigation cards, monsters, achievements, and future acts.',
     },
     {
       key: 'saves',
@@ -382,7 +378,7 @@ const playOnlineContent: PlayOnlineContent = {
   howEyebrow: 'How to play',
   howTitle: 'Feed the pit, read the request, then build for the next layer',
   howBody:
-    'The browser build is short and focused. It works best when you read the pit request, buy the building that solves the current wait, and listen for the next escalation instead of clicking every upgrade blindly.',
+    'The browser version is short and focused. It works best when you read the pit request, buy the building that solves the current wait, and listen for the next escalation instead of clicking every upgrade blindly.',
   howCards: [
     {
       label: 'Start with grain',
@@ -402,33 +398,33 @@ const playOnlineContent: PlayOnlineContent = {
     },
     {
       label: 'Use headphones',
-      body: 'The itch page recommends headphones. The sound design helps the browser build feel less like a plain clicker.',
+      body: 'The sound design helps the browser run feel less like a plain clicker, so headphones are worth using.',
     },
     {
-      label: 'Keep versions separate',
-      body: 'Switch to Steam when you want the full Curious Fox Sox horror game instead of the browser incremental.',
+      label: 'Choose the right mode',
+      body: 'Switch to Steam when you want the full PC story campaign instead of a short browser run.',
     },
   ],
   media: {
     eyebrow: 'Browser screenshots',
-    title: 'What the itch build looks like',
-    body: 'These screenshots come from the mooncrustgames itch page and show the short dark incremental that powers this play-online page. The embedded trailer below is for the separate Curious Fox Sox Steam Act 1 release, so compare the mood before choosing where to play next.',
+    title: 'What the browser game looks like',
+    body: 'These screenshots show the short dark incremental loop on the play-online page. The trailer below shows the Steam Act 1 mood, so you can choose the right way to play next.',
     screenshots: [
       {
         src: '/feedthepit/itch/feed-the-pit-browser-layer-one.png',
-        alt: 'Feed The Pit browser build early offering screen',
+        alt: 'Feed The Pit browser early offering screen',
         caption:
           'The browser run starts with simple offerings and makes the pit feel present immediately.',
       },
       {
         src: '/feedthepit/itch/feed-the-pit-browser-layer-two.png',
-        alt: 'Feed The Pit browser build with village upgrades',
+        alt: 'Feed The Pit browser with village upgrades',
         caption:
           'Buildings turn the waiting loop into a management problem as the village grows.',
       },
       {
         src: '/feedthepit/itch/feed-the-pit-browser-layer-three.png',
-        alt: 'Feed The Pit browser build deeper layer screenshot',
+        alt: 'Feed The Pit browser deeper layer screenshot',
         caption:
           'Later layers lean harder into the moral-cost upgrade tree described on itch.io.',
       },
@@ -436,8 +432,7 @@ const playOnlineContent: PlayOnlineContent = {
     video: {
       id: 'tE6LWsWcoJ4',
       title: 'Feed The Pit - Act 1 Trailer',
-      caption:
-        'Official Curious Fox Sox Act 1 trailer for the separate Steam horror release.',
+      caption: 'Act 1 trailer for the Steam story campaign.',
     },
   },
   afterEyebrow: 'Next steps',
@@ -472,7 +467,7 @@ const playOnlineContent: PlayOnlineContent = {
     {
       question: 'Is the online version free?',
       answer:
-        'The browser build comes from the mooncrustgames itch page and is hosted here with permission. Use Steam for the full Curious Fox Sox game.',
+        'You can start the browser version here. Use Steam when you want the full PC story campaign.',
     },
     {
       question: 'Can I fullscreen the game?',
@@ -482,7 +477,7 @@ const playOnlineContent: PlayOnlineContent = {
     {
       question: 'Does this page bypass official platforms?',
       answer:
-        'No. It hosts the authorized browser build, links to itch.io, and clearly points Steam players to the official Steam page.',
+        'No. It gives players a browser play option and points PC players toward Steam for the story campaign.',
     },
   ],
 };
