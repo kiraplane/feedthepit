@@ -6,7 +6,8 @@
   "preview_urls": true,
   "keep_vars": true,
   "vars": {
-    "ADSTERRA_ADS_ENABLED": "false"
+    "ADSTERRA_ADS_ENABLED": "false",
+    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": "G-GE0F2L964X"
   },
   "compatibility_date": "2025-04-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
