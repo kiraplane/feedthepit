@@ -539,6 +539,18 @@ export const guides: Guide[] = [
           'If the card logic is the problem, open the cards guide. If the chase is the problem, open the monsters guide. If you reached the credits or want to understand Act 1 boundaries, use the ending guide with spoilers enabled in your own head, not on your first run.',
         ],
       },
+      {
+        heading: 'Act 2 watch: keep the route spoiler-light',
+        paragraphs: [
+          'The safest current route is still Act 1 first. Future Act 2 coverage should start from official Steam news or developer posts, then split only the parts that create a new player job: a new mission route, a new monster behavior, a new ending branch, or a new technical issue.',
+          'Until Act 2 details are public and stable, this walkthrough should not guess at chapter order. Use it as the hub for current Act 1 routing, then add a separate Act 2 guide only when the new content has its own verified route.',
+        ],
+        bullets: [
+          'Expand this page for small official status notes.',
+          'Create a new Act 2 page only for a distinct route or ending workflow.',
+          'Keep monster, card, and ending pages linked so players can choose spoiler depth.',
+        ],
+      },
     ],
     faq: [
       {
