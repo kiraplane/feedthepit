@@ -372,6 +372,19 @@ export const guides: Guide[] = [
           'Once you can clear missions comfortably, replay with the goal of asking higher-value questions. If one card can remove three routes and another only confirms a hunch, take the route-removal card first.',
         ],
       },
+      {
+        heading: 'Record a card by use, not by appearance',
+        paragraphs: [
+          'When you learn a new card, write down the job it performed: broad region removal, trait filtering, final confirmation, route safety, or emergency recovery. That makes the note useful on a different randomized investigation even when the target and hand change.',
+          'Link the card note to the monster pressure it survived. A precise confirmation card may be excellent against a slow threat and too expensive against a monster that punishes delay. The cards and monsters pages should be read as one decision system.',
+        ],
+        bullets: [
+          'Broad filter: best before movement commits you to one side of the map.',
+          'Candidate comparison: best when two or three locations remain.',
+          'Final confirmation: hold until the answer changes the route you will take.',
+          'Safety or item card: spend at the failure point, not at the first scare.',
+        ],
+      },
     ],
     faq: [
       {
@@ -453,6 +466,19 @@ export const guides: Guide[] = [
         paragraphs: [
           'Because Act 1 is new and future acts are pending, treat community monster names and behaviors as notes until they are verified across runs. It is better to publish survival rules that help every player than to list a shaky monster table that becomes wrong after an update.',
           'This site will expand monster-specific pages only when enough stable names, behaviors, screenshots, and player questions justify them.',
+        ],
+      },
+      {
+        heading: 'Track behavior, reward, and card counter together',
+        paragraphs: [
+          'A useful monster record needs more than a name. Note the observed trigger, the behavior after that trigger, the item or movement response that worked, the card decision that became dangerous, and the mission reward or rank result after the clear.',
+          'Keep uncertain drops or rewards marked as run observations until they repeat. This prevents one lucky clear from becoming a fake drop table while still giving future runs a checklist to verify.',
+        ],
+        bullets: [
+          'Trigger: movement, delay, interaction, line of sight, or an unknown condition.',
+          'Counter: route change, held item, faster card choice, or deliberate waiting.',
+          'Card link: which investigation question became risky under pressure.',
+          'Reward check: completion, rank, item use, and any repeatable drop observation.',
         ],
       },
     ],
