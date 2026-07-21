@@ -51,6 +51,15 @@ const videos = {
     publishedAt: '2026-07-02',
     checkedAt,
   },
+  protectorShowcase: {
+    id: 'AlVij-e2-to',
+    title: 'The Protector Skin Thief (Feed the Pit)',
+    channel: 'pestilants',
+    url: 'https://www.youtube.com/watch?v=AlVij-e2-to',
+    thumbnailUrl: videoCover('AlVij-e2-to'),
+    publishedAt: '2026-07-09',
+    checkedAt,
+  },
 } satisfies Record<string, GuideVideo>;
 
 export { siteDescription };
@@ -1219,6 +1228,94 @@ export const guides: Guide[] = [
         question: 'Are Feed The Pit APKs safe?',
         answer:
           'Do not trust APK mirrors unless an official developer source announces a mobile release.',
+      },
+    ],
+  },
+  {
+    slug: 'protector-skin-thief',
+    path: '/guides/protector-skin-thief',
+    title: 'Feed The Pit Protector Skin Thief Guide',
+    seoTitle: 'Feed The Pit Protector Skin Thief - Variant and Dialogue',
+    seoDescription:
+      'Identify the Protector Skin Thief variant in Feed The Pit, understand its Pitspeech dialogue, and separate it from the Park Ranger disguise.',
+    summary:
+      'The Protector is a Skin Thief disguise variant with Pitspeech dialogue. Treat the familiar appearance as the clue and verify behavior before trusting the figure.',
+    category: 'Mechanics',
+    difficulty: 'Intermediate',
+    coverImageUrl: videos.protectorShowcase.thumbnailUrl,
+    publishedAt: checkedAt,
+    updatedAt: checkedAt,
+    sourceStrategy: 'user_intent_youtube',
+    videoSearchQueries: [
+      'Feed The Pit Protector Skin Thief',
+      'Feed The Pit Protector',
+      'Feed The Pit Skin Thief variants',
+    ],
+    sourceNotes:
+      'Built from the July 9 Protector variant showcase and its creator description, then cross-checked against the Steam Community video listing. The page does not invent a complete Skin Thief moveset from a 29-second showcase.',
+    video: videos.protectorShowcase,
+    tags: ['Protector', 'Skin Thief', 'Pitspeech', 'Act 1'],
+    relatedRoutes: [
+      '/monsters',
+      '/guides/characters-guide',
+      '/guides/act-1-walkthrough',
+      '/guides/ending-guide',
+    ],
+    body: [
+      {
+        heading: 'The Protector result is a Skin Thief variant',
+        paragraphs: [
+          'Current community footage labels the encounter as the Protector variant of the Skin Thief. That means the useful guide question is not whether the real Protector exists, but whether the familiar figure in front of you is being copied.',
+          'Do not turn recognition into trust. In a disguise encounter, the appearance is part of the threat, so watch the dialogue and behavior before approaching.',
+        ],
+      },
+      {
+        heading: 'Listen for Pitspeech dialogue',
+        paragraphs: [
+          "The Protector variant showcase includes Pitspeech dialogue. The creator notes that the dialogue has a translation and frames it as a warning that the player's understanding of the world is unreliable.",
+          'For practical play, the language shift is the important tell. If a familiar character suddenly communicates through Pitspeech or delivers world-breaking warnings, stop treating the scene as a normal character interaction.',
+        ],
+      },
+      {
+        heading: 'Separate Protector and Park Ranger variants',
+        paragraphs: [
+          'The same showcase description also identifies a Park Ranger version. Its reported indicator is direct speech asking the player to stop and come closer.',
+          'The two disguises share the same lesson: a recognizable role can be bait. Note which voice and dialogue pattern appeared, keep distance while reading the scene, and avoid assuming every variant uses the same cue.',
+        ],
+        bullets: [
+          'Protector variant: watch for Pitspeech and reality-warning dialogue.',
+          'Park Ranger variant: watch for requests to stop and approach.',
+          'Do not generalize one short clip into a complete movement or damage rule.',
+        ],
+      },
+      {
+        heading: 'Use the showcase as identification evidence',
+        paragraphs: [
+          'The embedded video is short and best used as a visual identification reference. It confirms the variant and dialogue presentation, but it does not prove every trigger, chase rule, or counterplay condition.',
+          'For a full mission route, pair this page with the monsters and Act 1 walkthrough pages. Those pages handle the broader survival loop while this one answers the specific Protector query.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Is the Protector a Skin Thief in Feed The Pit?',
+        answer:
+          'The July 9 community showcase specifically identifies a Protector disguise variant of the Skin Thief.',
+      },
+      {
+        question: 'What identifies the Protector variant?',
+        answer:
+          'The available showcase highlights Pitspeech dialogue and a warning-style message as the clearest evidence.',
+      },
+      {
+        question: 'Is there another Skin Thief disguise?',
+        answer:
+          'The same creator reports a Park Ranger version whose cue is asking the player to stop and come closer.',
+      },
+      {
+        question: 'Does the video prove the full counter strategy?',
+        answer:
+          'No. It is a short identification showcase, so this guide keeps unverified movement and combat claims out.',
       },
     ],
   },
