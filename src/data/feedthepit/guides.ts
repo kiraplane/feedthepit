@@ -1319,6 +1319,82 @@ export const guides: Guide[] = [
       },
     ],
   },
+  {
+    slug: 'patch-2-guide',
+    path: '/guides/patch-2-guide',
+    title: 'Feed The Pit Patch 2 Guide',
+    seoTitle: 'Feed The Pit Patch 2 - Keybinds, Saves & Monsters',
+    seoDescription:
+      'See what Feed The Pit Patch 2 changes for keybinds, inverted camera, dialogue volume, Little Rabbit, Flesh Thief, saves and mission stability.',
+    summary:
+      'The July 22 patch is the current baseline for controls and Act 1 troubleshooting, with new accessibility options, monster changes and many save-state fixes.',
+    category: 'Official',
+    difficulty: 'Status',
+    coverImageUrl: '/feedthepit/screenshots/feed-the-pit-investigation.jpg',
+    publishedAt: '2026-07-24',
+    updatedAt: '2026-07-24',
+    sourceStrategy: 'official',
+    videoSearchQueries: [
+      'Feed The Pit Patch 2',
+      'Feed The Pit keybind fix',
+      'Feed The Pit Little Rabbit',
+    ],
+    sourceNotes:
+      'Summarized from the official Patch #2 Steam announcement dated July 22. Later official patches and the live client override this snapshot.',
+    tags: ['Patch 2', 'Controls', 'Save fixes'],
+    relatedRoutes: [
+      '/guides/rendering-fixes',
+      '/guides/monsters-guide',
+      '/guides/act-1-walkthrough',
+      '/guides/steam-release',
+    ],
+    body: [
+      {
+        heading: 'Reset controls after updating',
+        paragraphs: [
+          'Patch 2 fixes keybind-related issues, adds inverted camera controls and separates Dialogue into its own audio track. Open Settings after the update, confirm every custom binding and use the new volume reset button if an older profile has unusual levels.',
+          'If a control still fails, test the default binding before editing configuration files. Report the exact input device, changed action and mission state so the issue can be separated from the fixed launch behavior.',
+        ],
+      },
+      {
+        heading: 'Little Rabbit and Flesh Thief changed',
+        paragraphs: [
+          'Little Rabbit now blends animations correctly, forces the flashlight on during the hunting phase, eats slightly faster and moves slightly slower while chasing the player. The Flesh Thief can no longer growl while disguised as the Park Ranger.',
+          'Older videos may use the growl as a disguise tell or show a different chase rhythm. Use current visual and dialogue evidence instead of relying on that removed cue.',
+        ],
+      },
+      {
+        heading: 'Save protection is broader',
+        paragraphs: [
+          'The patch adds save points at the tutorial mission and first sermon load, and it includes additional checks intended to prevent players falling out of a level or entering broken pause states. It also revises stored and respawned van/player tools to address durability problems.',
+          'After updating, retest the latest automatic save before replaying a whole act. Keep a backup when diagnosing an older profile, and avoid copying someone else’s save over a state that may recover under the new checks.',
+        ],
+      },
+      {
+        heading: 'Mission and presentation fixes affect walkthroughs',
+        paragraphs: [
+          'Patch 2 adjusts camera behavior, mission dialogue, ceremony timing, cave and barn audio, object collision and many cutscene states. A current walkthrough should be followed for decisions and order, not for matching every sound or animation frame.',
+          'The held map is now slightly emissive at night. Use that readability change instead of increasing brightness until the rest of the horror scenes become washed out.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Can Feed The Pit invert camera controls?',
+        answer: 'Yes. Patch 2 adds an invert-camera option.',
+      },
+      {
+        question: 'Does the Park Ranger Flesh Thief still growl?',
+        answer:
+          'The official Patch 2 notes say the Flesh Thief can no longer growl as the Park Ranger.',
+      },
+      {
+        question: 'Were new save points added?',
+        answer:
+          'Yes. The patch lists new save points for the tutorial mission and the first sermon load.',
+      },
+    ],
+  },
 ];
 
 export const featuredGuides = guides.filter((guide) =>
