@@ -66,6 +66,75 @@ export { siteDescription };
 
 export const guides: Guide[] = [
   {
+    slug: 'challenge-mode-balancing-guide',
+    path: '/guides/challenge-mode-balancing-guide',
+    title: 'Feed The Pit Challenge Mode Balancing Guide',
+    seoTitle: 'Feed The Pit Challenge Mode - Cardmaster & Exploding Cards',
+    seoDescription:
+      'Adapt to Feed The Pit Challenge Mode balancing for Roaming Cardmaster, Exploding Cards, spores, Spriggan and beartrap pressure.',
+    summary:
+      'The August 23 balance pass removes several unavoidable-feeling overlaps, but Challenge Mode still rewards route control and a saved answer for bad card combinations.',
+    category: 'Mechanics',
+    difficulty: 'Advanced',
+    coverImageUrl: '/feedthepit/feed-the-pit-header.jpg',
+    publishedAt: '2026-08-24',
+    updatedAt: '2026-08-24',
+    sourceStrategy: 'official',
+    videoSearchQueries: [
+      'Feed The Pit challenge mode',
+      'Feed The Pit Roaming Cardmaster Exploding Cards',
+    ],
+    sourceNotes:
+      'Built from the official August 23 Challenge Mode balancing announcement. Challenge combinations still vary by run, so this page focuses on stable decisions instead of guaranteed seeds.',
+    tags: ['Challenge Mode', 'Cardmaster', 'Balance'],
+    relatedRoutes: [
+      '/guides/cards-guide',
+      '/guides/monsters-guide',
+      '/guides/walkthrough-guide',
+      '/guides/ending-guide',
+    ],
+    body: [
+      {
+        heading: 'Use distance instead of trying to outrun a teleport',
+        paragraphs: [
+          'Roaming Cardmaster can no longer teleport extremely close, but it also cannot drift too far away. Use the added minimum space to cross a dangerous tile or inspect one card, then rebuild distance before committing to another interaction.',
+          'Do not stand still waiting for a perfect route. The revised behavior reduces absolute failures; it does not remove pressure from the room.',
+        ],
+      },
+      {
+        heading: 'Treat Exploding Cards as a pathing modifier',
+        paragraphs: [
+          'When Exploding Cards overlaps with Cardmaster, identify the escape tile before flipping or approaching the next card. Keep the center of the room available where possible so one explosion does not trap the route against an edge.',
+          'Spores now avoid spawning within two tiles of the player instead of one. Use that breathing room to reposition early rather than spending it on a risky extra interaction.',
+        ],
+      },
+      {
+        heading: 'Carry one answer for the difficulty spike',
+        paragraphs: [
+          'The patch slightly increases Spriggan difficulty and beartrap spawn chance, so saving one resource for a forced route remains important. Spend a card or item when it prevents a chain of mistakes, not merely because the room looks busy.',
+          'After a failure, name the exact overlap that ended the run. Change one response for the next attempt instead of rebuilding the whole route around ordinary bad luck.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Is Roaming Cardmaster still random?',
+        answer:
+          'Yes, but the balance pass prevents it from teleporting extremely close and also keeps it from straying too far, reducing the most absolute outcomes.',
+      },
+      {
+        question: 'How close can spores spawn after the patch?',
+        answer:
+          'The official notes increase the protected distance from one tile to two tiles around the player.',
+      },
+      {
+        question: 'Did Challenge Mode become easy?',
+        answer:
+          'No. The patch reduces unavoidable combinations while slightly increasing Spriggan difficulty and beartrap spawn chance.',
+      },
+    ],
+  },
+  {
     slug: 'beginner-guide',
     path: '/guides/beginner-guide',
     title: 'Feed The Pit Beginner Guide',

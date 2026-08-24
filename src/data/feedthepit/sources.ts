@@ -1,6 +1,6 @@
 import type { DataSource, GameFact, KeywordMatrixItem } from './types';
 
-export const checkedAt = '2026-08-22';
+export const checkedAt = '2026-08-24';
 
 export const siteFacts = {
   siteName: 'Feed The Pit',
@@ -54,6 +54,14 @@ export const gameFacts: GameFact[] = [
 ];
 
 export const sourceList: DataSource[] = [
+  {
+    type: 'official',
+    label: 'Challenge Mode balancing and engine upgrade',
+    url: 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228674239',
+    checkedAt,
+    confidence: 'high',
+    note: 'Official August 23 source for Roaming Cardmaster, Exploding Cards, spore distance, Spriggan and beartrap balance plus the engine upgrade.',
+  },
   {
     type: 'official',
     label: 'Steam store page',
