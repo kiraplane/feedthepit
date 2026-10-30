@@ -56,6 +56,14 @@ export interface GuidesIndexContent {
   title: string;
   intro: string;
   readGuide: string;
+  hubEyebrow: string;
+  hubTitle: string;
+  hubBody: string;
+  hubLinks: Array<{
+    title: string;
+    href: string;
+    body: string;
+  }>;
   faq: GuideFaq[];
 }
 
@@ -170,7 +178,7 @@ export function getHomeContent(_locale?: Locale | string): HomeContent {
       'Feed The Pit Wiki - Guides, Cards, Monsters and Play Online',
     title: 'Feed The Pit',
     intro:
-      'Guide hub for the investigative horror game: cards, monsters, walkthrough, endings, achievements, Steam setup, safe downloads, and browser play.',
+      'The Feed The Pit wiki for the investigative horror game. Start with cards, monsters, and the walkthrough, then use endings, achievements, Steam setup, safe downloads, and browser play.',
     primaryCta: 'Start the beginner guide',
     playCta: 'Play online',
     steamCta: 'Steam page',
@@ -233,6 +241,11 @@ export function getHomeContent(_locale?: Locale | string): HomeContent {
     coreRouteItems,
     faq: [
       {
+        question: 'Where should I start on the Feed The Pit wiki?',
+        answer:
+          'Open the guide hub for the full index. Use the monsters page for habits and counterplay, and the walkthrough when you want the spoiler-light Act 1 route.',
+      },
+      {
         question: 'Is this an official Feed The Pit website?',
         answer:
           'No. It is an independent guide hub. Use Steam and Curious Fox Sox channels for official game updates.',
@@ -263,8 +276,44 @@ export function getGuidesIndexContent(
     badge: 'Feed The Pit guides',
     title: 'Feed The Pit Guide Hub',
     intro:
-      'Choose a guide by intent: beginner route, play online, cards, monsters, Act 1 walkthrough, ending help, achievements, rendering fixes, Steam, downloads, Discord, or mobile safety.',
+      'Feed The Pit wiki guides, sorted by intent: beginner route, play online, cards, monsters, Act 1 walkthrough, ending help, achievements, rendering fixes, Steam, downloads, Discord, or mobile safety.',
     readGuide: 'Read guide',
+    hubEyebrow: 'Wiki map',
+    hubTitle: 'Pick the page that matches the job',
+    hubBody:
+      'Searchers looking for the Feed The Pit wiki usually need the full index, a monster read, or the spoiler-light route. Start with one of those, then branch into cards, Act 1, and endings.',
+    hubLinks: [
+      {
+        title: 'Monsters',
+        href: '/monsters',
+        body: 'Habits and counterplay for threats already named in the patch and balance notes.',
+      },
+      {
+        title: 'Walkthrough',
+        href: '/walkthrough',
+        body: 'Spoiler-light Act 1 route: cards, monster pressure, then the final commit.',
+      },
+      {
+        title: 'Cards',
+        href: '/cards',
+        body: 'Map questions and when a precise card is too expensive under pressure.',
+      },
+      {
+        title: 'Beginner guide',
+        href: '/guides/beginner-guide',
+        body: 'First-mission order for investigation, items, and rank discipline.',
+      },
+      {
+        title: 'Act 1',
+        href: '/guides/act-1-walkthrough',
+        body: 'Current launch boundary, and what stays open until later acts.',
+      },
+      {
+        title: 'Endings',
+        href: '/guides/ending-guide',
+        body: 'Read this after a clear, when you want the heavier spoiler notes.',
+      },
+    ],
     faq: [
       {
         question: 'Which Feed The Pit guide should I read first?',
@@ -277,9 +326,9 @@ export function getGuidesIndexContent(
           'Most guides cover the Steam Act 1 story campaign. The play-online and browser-version pages focus on the shorter browser experience.',
       },
       {
-        question: 'Will you add monster or card databases?',
+        question: 'Is the monsters page a full bestiary?',
         answer:
-          'Only when stable Act 1 data supports them. At launch, decision guides are safer than thin tables.',
+          'No. It lists habits and counterplay only for threats already named on the Patch 2, Challenge Mode, and Protector pages. Unnamed mission nemeses stay as behavior rules.',
       },
     ],
   };

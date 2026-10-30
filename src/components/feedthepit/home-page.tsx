@@ -66,12 +66,30 @@ const beginnerJourney = [
   {
     title: 'Read the monster',
     href: '/monsters',
-    body: 'Watch the mission threat before spending every item.',
+    body: 'Use named habits and counterplay before spending every item.',
   },
   {
     title: 'Choose how to play',
     href: '/steam',
     body: 'Use Steam for the PC story release and future act updates.',
+  },
+] as const;
+
+const wikiJobs = [
+  {
+    title: 'Guide hub',
+    href: '/guides',
+    body: 'The full Feed The Pit wiki index, sorted by the problem in front of you.',
+  },
+  {
+    title: 'Monsters',
+    href: '/monsters',
+    body: 'Habits and counterplay for threats already named in the patch and balance notes.',
+  },
+  {
+    title: 'Walkthrough',
+    href: '/walkthrough',
+    body: 'Spoiler-light Act 1 route when the monster read is no longer the blocker.',
   },
 ] as const;
 
@@ -99,10 +117,11 @@ const coreModules = [
   {
     title: 'Monsters and Endings',
     icon: Skull,
-    body: 'Read the mission nemesis, protect the last route, and move into Act 1 ending help only when you are ready.',
+    body: 'Read named monster habits, protect the last route, and move into Act 1 ending help only when you are ready.',
     links: [
       ['Monsters guide', '/monsters'],
-      ['Act 1 walkthrough', '/guides/act-1-walkthrough'],
+      ['Guide hub', '/guides'],
+      ['Walkthrough', '/walkthrough'],
       ['Ending guide', '/guides/ending-guide'],
     ],
   },
@@ -322,6 +341,41 @@ export function FeedHomePage({ locale }: { locale?: Locale }) {
                     </LocaleLink>
                   ))}
                 </div>
+              </div>
+            </section>
+
+            <section>
+              <Badge className="bg-[#C9B28A] text-[#170B0A]">
+                Feed The Pit wiki
+              </Badge>
+              <h2 className="mt-4 max-w-3xl font-display text-3xl font-black text-white">
+                Open the page that matches the search.
+              </h2>
+              <p className="mt-4 max-w-3xl text-sm leading-7 text-[#E8D8C2]">
+                Most wiki visits need one of three jobs: the full guide index,
+                monster habits and counterplay, or the spoiler-light
+                walkthrough. Start there, then branch into cards, Act 1, and
+                endings.
+              </p>
+              <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-3">
+                {wikiJobs.map((job) => (
+                  <LocaleLink
+                    key={job.href}
+                    href={job.href}
+                    className="group rounded-lg border border-[#5B3132] bg-[#17100F] p-5 transition hover:-translate-y-0.5 hover:border-[#E3483B]"
+                  >
+                    <h3 className="font-display text-2xl font-bold text-white group-hover:text-[#E3483B]">
+                      {job.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-6 text-[#E8D8C2]">
+                      {job.body}
+                    </p>
+                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#E3483B]">
+                      Open page
+                      <ArrowRight className="size-4" />
+                    </span>
+                  </LocaleLink>
+                ))}
               </div>
             </section>
 

@@ -40,10 +40,23 @@ export interface KeywordMatrixItem {
   notes: string;
 }
 
+export interface GuideTable {
+  caption: string;
+  columns: string[];
+  rows: string[][];
+}
+
+export interface GuideLink {
+  href: string;
+  label: string;
+}
+
 export interface GuideSection {
   heading: string;
   paragraphs: string[];
   bullets?: string[];
+  table?: GuideTable;
+  links?: GuideLink[];
 }
 
 export interface GuideFaq {
