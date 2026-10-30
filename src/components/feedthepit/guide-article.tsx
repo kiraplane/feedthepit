@@ -231,6 +231,61 @@ export function GuideArticle({
                           ))}
                         </ul>
                       ) : null}
+                      {section.table ? (
+                        <div className="mt-4 overflow-x-auto rounded-md border border-[#5B3132]">
+                          <table className="w-full min-w-[720px] border-collapse text-left text-sm leading-6 text-[#E8D8C2]">
+                            <caption className="border-[#5B3132] border-b bg-[#0B0708] px-3 py-3 text-left text-[#C9B28A]">
+                              {section.table.caption}
+                            </caption>
+                            <thead className="bg-[#0B0708] text-[#F2E7D0]">
+                              <tr>
+                                {section.table.columns.map((column) => (
+                                  <th
+                                    key={column}
+                                    className="border-[#5B3132] border-b px-3 py-2 font-semibold"
+                                  >
+                                    {column}
+                                  </th>
+                                ))}
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {section.table.rows.map((row) => (
+                                <tr
+                                  key={row[0]}
+                                  className="border-[#5B3132] border-b last:border-b-0"
+                                >
+                                  {row.map((cell, cellIndex) => (
+                                    <td
+                                      key={`${row[0]}-${cellIndex}`}
+                                      className="px-3 py-3 align-top"
+                                    >
+                                      {cell}
+                                    </td>
+                                  ))}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      ) : null}
+                      {section.links?.length ? (
+                        <div className="mt-4 flex flex-wrap gap-2">
+                          {section.links.map((link) => (
+                            <Button
+                              key={link.href}
+                              asChild
+                              variant="outline"
+                              size="sm"
+                              className="h-auto whitespace-normal border-[#5B3132] bg-[#0B0708] text-[#F2E7D0] hover:border-[#E3483B] hover:bg-[#251718]"
+                            >
+                              <LocaleLink href={link.href}>
+                                {link.label}
+                              </LocaleLink>
+                            </Button>
+                          ))}
+                        </div>
+                      ) : null}
                     </section>
                   ))}
                 </div>

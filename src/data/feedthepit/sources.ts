@@ -1,6 +1,6 @@
 import type { DataSource, GameFact, KeywordMatrixItem } from './types';
 
-export const checkedAt = '2026-10-12';
+export const checkedAt = '2026-10-30';
 
 export const siteFacts = {
   siteName: 'Feed The Pit',
@@ -28,7 +28,7 @@ export const siteFacts = {
 } as const;
 
 export const siteDescription =
-  'Feed The Pit wiki for guides, cards, monsters, endings, Steam, download help, and browser play.';
+  'Feed The Pit wiki for guides, cards, monsters, walkthroughs, endings, Steam, download help, and browser play.';
 
 export const gameFacts: GameFact[] = [
   {
@@ -238,7 +238,7 @@ export const keywordMatrix: KeywordMatrixItem[] = [
     evidence:
       'Steam describes a new monster each mission; YouTube/Steam reviews mention enemy uniqueness.',
     notes:
-      'Use behavior-reading principles instead of unverified monster table.',
+      'Keep behavior-reading rules, and only table habits that official patch notes or existing guides already name.',
   },
   {
     keyword: 'Feed The Pit characters',

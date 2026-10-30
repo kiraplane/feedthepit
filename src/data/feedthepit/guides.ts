@@ -88,9 +88,9 @@ export const guides: Guide[] = [
       'Built from the official August 23 Challenge Mode balancing announcement. Challenge combinations still vary by run, so this page focuses on stable decisions instead of guaranteed seeds.',
     tags: ['Challenge Mode', 'Cardmaster', 'Balance'],
     relatedRoutes: [
-      '/guides/cards-guide',
-      '/guides/monsters-guide',
-      '/guides/walkthrough-guide',
+      '/cards',
+      '/monsters',
+      '/walkthrough',
       '/guides/ending-guide',
     ],
     body: [
@@ -488,9 +488,9 @@ export const guides: Guide[] = [
     title: 'Feed The Pit Monsters Guide',
     seoTitle: 'Feed The Pit Monsters Guide - Survival and Behavior Reading',
     seoDescription:
-      'Survive Feed The Pit monsters by reading behavior, controlling risk, saving items, and separating investigation choices from chase panic.',
+      'Survive Feed The Pit monsters by reading habits, using sourced counterplay, saving items, and separating investigation choices from chase panic.',
     summary:
-      'Every mission monster is a behavior puzzle. Watch what triggers danger, keep an escape route, and spend items only after you know what they are protecting.',
+      'Every mission monster is a behavior puzzle. Use the sourced habits table when a threat is already named, then keep an escape route and spend items only after you know what they are protecting.',
     category: 'Mechanics',
     difficulty: 'Intermediate',
     coverImageUrl: screenshotCover('feed-the-pit-monster.jpg'),
@@ -503,13 +503,17 @@ export const guides: Guide[] = [
       'Feed The Pit Act 1 monsters',
     ],
     sourceNotes:
-      'Based on official Steam monster description and Steam Community review signals about unique enemy behavior.',
+      'Behavior rules still come from the Steam mission-monster description. The habits table only repeats threats already documented from the July 22 Patch 2 notes, the August 23 Challenge Mode balance notes, and the Protector identification page. Unnamed mission nemeses stay as behavior rules. Act 1 remains the launch boundary.',
     tags: ['Monsters', 'Survival', 'Act 1'],
     relatedRoutes: [
+      '/guides',
+      '/walkthrough',
       '/cards',
-      '/guides/act-1-walkthrough',
-      '/guides/rendering-fixes',
       '/guides/beginner-guide',
+      '/guides/patch-2-guide',
+      '/guides/challenge-mode-balancing-guide',
+      '/guides/protector-skin-thief',
+      '/guides/act-1-walkthrough',
     ],
     body: [
       {
@@ -533,6 +537,85 @@ export const guides: Guide[] = [
         ],
       },
       {
+        heading: 'Sourced habits and counterplay',
+        paragraphs: [
+          'Use this table when the threat already has a stable name on the wiki. Each row is a decision aid for the current Act 1 and Challenge Mode notes. It is not a damage chart, drop list, or a complete bestiary.',
+          'If the mission monster is not in the table, go back to the rhythm above: name the trigger, keep a fallback route, and spend one tool only when it protects the answer you already have.',
+        ],
+        table: {
+          caption:
+            'Named threats only. Patch 2 and the August 23 balance pass are the current baselines. Later official notes override a row.',
+          columns: ['Threat', 'Habit', 'Counterplay', 'Where it is documented'],
+          rows: [
+            [
+              'Little Rabbit',
+              'In the hunting phase the flashlight is forced on. It eats slightly faster and moves slightly slower while chasing.',
+              'Use the slower chase to rebuild a route or finish one card read. Do not copy chase timing from clips recorded before Patch 2.',
+              'Patch 2 guide',
+            ],
+            [
+              'Flesh Thief',
+              'The Park Ranger disguise no longer growls. A familiar uniform can still be the thief.',
+              'Drop the old growl tell. Read dialogue and distance before you approach.',
+              'Patch 2 guide',
+            ],
+            [
+              'Protector disguise',
+              'A Skin Thief variant that keeps a familiar face and shifts into Pitspeech with warning-style dialogue.',
+              'Treat recognition as the bait. Stop the approach when the language shifts, and keep the route you already planned.',
+              'Protector guide',
+            ],
+            [
+              'Park Ranger disguise',
+              'The reported cue is direct speech asking you to stop and come closer. The Patch 2 growl tell is gone.',
+              'Do not close distance because the role looks helpful. Hold the fallback route until the dialogue matches a safe interaction.',
+              'Protector guide, with the Patch 2 growl removal',
+            ],
+            [
+              'Roaming Cardmaster',
+              'In Challenge Mode it no longer teleports extremely close, and it also cannot drift too far away.',
+              'Spend the minimum gap on one dangerous tile or one card inspection, then rebuild distance before the next interaction.',
+              'Challenge Mode balance guide',
+            ],
+            [
+              'Spores',
+              'Challenge Mode spawn protection is two tiles around you, up from one tile.',
+              'Reposition inside that extra tile. Do not spend it on another risky interaction.',
+              'Challenge Mode balance guide',
+            ],
+            [
+              'Spriggan',
+              'Challenge Mode difficulty is slightly higher.',
+              'Keep one resource for a forced route. Spend it to stop a chain of mistakes, not because the room looks busy.',
+              'Challenge Mode balance guide',
+            ],
+            [
+              'Beartraps',
+              'Challenge Mode spawn chance is slightly higher.',
+              'Assume a path can close. Save one answer for the blocked route.',
+              'Challenge Mode balance guide',
+            ],
+            [
+              'Exploding Cards',
+              'A Challenge Mode pathing modifier that overlaps with Cardmaster pressure.',
+              'Pick the escape tile before the next card, and keep the center of the room open.',
+              'Challenge Mode balance guide',
+            ],
+          ],
+        },
+        links: [
+          { href: '/guides/patch-2-guide', label: 'Patch 2 monster changes' },
+          {
+            href: '/guides/challenge-mode-balancing-guide',
+            label: 'Challenge Mode balance',
+          },
+          {
+            href: '/guides/protector-skin-thief',
+            label: 'Protector Skin Thief',
+          },
+        ],
+      },
+      {
         heading: 'Items are for the failure point',
         paragraphs: [
           'Steam achievements reference using seven non-card items in a mission, so items clearly matter. The practical question is timing. Spending an item to remove mild pressure can leave you empty when the actual mission failure point arrives.',
@@ -540,10 +623,10 @@ export const guides: Guide[] = [
         ],
       },
       {
-        heading: 'Do not turn monster notes into false certainty',
+        heading: 'What this table does not claim',
         paragraphs: [
-          'Because Act 1 is new and future acts are pending, treat community monster names and behaviors as notes until they are verified across runs. It is better to publish survival rules that help every player than to list a shaky monster table that becomes wrong after an update.',
-          'This site will expand monster-specific pages only when enough stable names, behaviors, screenshots, and player questions justify them.',
+          'Steam still frames each mission around a new nemesis, and Act 1 is the public launch boundary. Acts 2 and 3 stay planned free updates until an official note says otherwise. Do not treat a missing row as proof that a monster was removed.',
+          'Community names that are not already written up on the Patch 2, Challenge Mode, or Protector pages stay off the table. A single clear is a note, not a moveset.',
         ],
       },
       {
@@ -559,22 +642,51 @@ export const guides: Guide[] = [
           'Reward check: completion, rank, item use, and any repeatable drop observation.',
         ],
       },
+      {
+        heading: 'Continue in the guide hub',
+        paragraphs: [
+          'After the habits table, pick the next page by the problem you still have. The guide hub is the full index. The walkthrough is the spoiler-light Act 1 route when the monster read is no longer the blocker.',
+          'Open cards if the map question is the problem, the beginner guide if this is the first mission, and Act 1 when you need the current launch boundary.',
+        ],
+        links: [
+          { href: '/guides', label: 'Feed The Pit guide hub' },
+          { href: '/walkthrough', label: 'Spoiler-light walkthrough' },
+          { href: '/cards', label: 'Cards guide' },
+          { href: '/guides/beginner-guide', label: 'Beginner guide' },
+          { href: '/guides/act-1-walkthrough', label: 'Act 1 walkthrough' },
+        ],
+      },
     ],
     faq: [
       {
         question: 'Does every Feed The Pit mission have a monster?',
         answer:
-          'Steam describes every mission as bringing a new monster that acts as your nemesis for the day.',
+          'Steam describes every mission as bringing a new monster that acts as your nemesis for the day. The table only names threats that already have stable notes.',
       },
       {
         question: 'Can I memorize monster behavior?',
         answer:
-          'You can learn patterns, but the safer habit is reading the current mission instead of assuming every enemy follows the same rule.',
+          'You can learn the named habits, but the safer habit is reading the current mission instead of assuming every enemy follows the same rule.',
       },
       {
-        question: 'Will you add a monster database?',
+        question: 'How do I handle Little Rabbit after Patch 2?',
         answer:
-          'Only after stable Act 1 data supports it. For launch, survival rules are safer than unverified tables.',
+          'Expect the flashlight to stay on in the hunting phase, a slightly faster eat, and a slightly slower chase. Rebuild the route during that slower chase instead of matching older clips.',
+      },
+      {
+        question: 'Does the Park Ranger disguise still growl?',
+        answer:
+          'No. Patch 2 says the Flesh Thief can no longer growl while disguised as the Park Ranger. Use dialogue and distance, not the removed growl.',
+      },
+      {
+        question: 'How should I play around Roaming Cardmaster?',
+        answer:
+          'Use the minimum gap for one tile or one card inspection, then rebuild distance. When Exploding Cards overlap that pressure, choose the escape tile before the next card.',
+      },
+      {
+        question: 'Where should I go after the monsters page?',
+        answer:
+          'Open the guide hub for the full index, or the walkthrough when you want the spoiler-light Act 1 route. Use cards if the map question is still the blocker.',
       },
     ],
   },
@@ -603,10 +715,11 @@ export const guides: Guide[] = [
     video: videos.walkthrough,
     tags: ['Walkthrough', 'Act 1', 'Spoiler-Light'],
     relatedRoutes: [
+      '/guides',
+      '/monsters',
       '/guides/act-1-walkthrough',
       '/guides/ending-guide',
       '/cards',
-      '/monsters',
     ],
     body: [
       {
@@ -641,6 +754,12 @@ export const guides: Guide[] = [
         heading: 'What to read next',
         paragraphs: [
           'If the card logic is the problem, open the cards guide. If the chase is the problem, open the monsters guide. If you reached the credits or want to understand Act 1 boundaries, use the ending guide with spoilers enabled in your own head, not on your first run.',
+          'The guide hub is the full index when you are not sure which of those pages comes next.',
+        ],
+        links: [
+          { href: '/guides', label: 'Guide hub' },
+          { href: '/monsters', label: 'Monsters guide' },
+          { href: '/cards', label: 'Cards guide' },
         ],
       },
       {
@@ -1413,9 +1532,9 @@ export const guides: Guide[] = [
     tags: ['Patch 2', 'Controls', 'Save fixes'],
     relatedRoutes: [
       '/guides/rendering-fixes',
-      '/guides/monsters-guide',
+      '/monsters',
       '/guides/act-1-walkthrough',
-      '/guides/steam-release',
+      '/steam',
     ],
     body: [
       {

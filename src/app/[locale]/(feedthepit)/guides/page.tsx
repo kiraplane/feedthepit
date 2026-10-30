@@ -70,6 +70,34 @@ export default async function GuidesPage({
               label
             />
 
+            <section className="rounded-lg border border-[#5B3132] bg-[#17100F] p-5 md:p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#E3483B]">
+                {content.hubEyebrow}
+              </p>
+              <h2 className="mt-2 font-display text-3xl font-black">
+                {content.hubTitle}
+              </h2>
+              <p className="mt-3 max-w-3xl text-sm leading-7 text-[#E8D8C2]">
+                {content.hubBody}
+              </p>
+              <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                {content.hubLinks.map((link) => (
+                  <LocaleLink
+                    key={link.href}
+                    href={link.href}
+                    className="rounded-md border border-[#5B3132] bg-[#0B0708] p-4 transition hover:border-[#E3483B]"
+                  >
+                    <h3 className="font-display text-xl font-bold">
+                      {link.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-6 text-[#E8D8C2]">
+                      {link.body}
+                    </p>
+                  </LocaleLink>
+                ))}
+              </div>
+            </section>
+
             <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
               {guides.map((guide) => (
                 <article
